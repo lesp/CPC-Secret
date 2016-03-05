@@ -111,6 +111,8 @@ else:
 strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS)
 strip.begin()
 
+picture("images/dance.jpg","DANCE, DANCE",737,735)
+
 #Main loop, runs forever.
 while True:
     #For loop looks for events.
@@ -124,50 +126,50 @@ while True:
                 print("LEFT")
                 theaterChase(strip, Color(127, 127, 127)) #WHITE
                 music("samples/drum_cymbal_open.wav")
-                picture("images/cymbals.jpg","cymballs",1430,1200)
+                #picture("images/cymbals.jpg","cymballs",1430,1200)
                 time.sleep(duration)
             elif event.button == 1:
                 print("DOWN")
                 theaterChase(strip, Color(255, 0, 0)) #RED
                 music("samples/drum_tom_lo_hard.wav")
-                picture("images/snare-drum.jpg","Drum",920,640)
+                #picture("images/snare-drum.jpg","Drum",920,640)
                 time.sleep(duration)
             elif event.button == 2:
                 print("UP")
                 theaterChase(strip, Color(0, 255, 0)) #Green
                 music("samples/drum_heavy_kick.wav")
-                picture("images/kick-drum.jpg","Kick Drum",292,300)
+                #picture("images/kick-drum.jpg","Kick Drum",292,300)
                 time.sleep(duration)
             elif event.button == 3:
                 print("RIGHT")
                 theaterChase(strip, Color(0, 0, 255)) #BLUE
                 music("samples/drum_snare_hard.wav")
-                picture("images/snare-drum.jpg","Drum",920,640)
+                #picture("images/snare-drum.jpg","Drum",920,640)
                 time.sleep(duration)
             elif event.button == 4:
                 print("TRIANGLE")
                 theaterChase(strip, Color(255, 0, 255)) #PURPLE
                 music("samples/loop_amen.wav")
-                picture("images/lsp.jpg","Erh my glob!",500,375)
+                #picture("images/lsp.jpg","Erh my glob!",500,375)
                 time.sleep(duration)
             elif event.button == 5:
                 print("SQUARE")
                 theaterChase(strip, Color(255, 255, 0)) #RED
                 music("samples/bd_boom.wav")
-                picture("images/raspberry-pi-logo.jpg","Raspberry Pi!",900,450)
+                #picture("images/raspberry-pi-logo.jpg","Raspberry Pi!",900,450)
                 time.sleep(duration)
             elif event.button == 6:
                 print("X")
                 theaterChase(strip, Color(127, 127, 255)) #RED
                 time.sleep(0.3)
                 music("samples/elec_chime.wav")
-                picture("images/adventure-time.png","Adventure Time!",580,326)
+                #picture("images/adventure-time.png","Adventure Time!",580,326)
                 time.sleep(duration)
             elif event.button == 7:
                 print("CIRCLE")
                 theaterChase(strip, Color(0, 255, 255)) #RED
                 music("samples/perc_bell.wav")
-                picture("images/unicorn.jpg","Unicorns!!",540,530)
+                #picture("images/unicorn.jpg","Unicorns!!",540,530)
                 time.sleep(duration)
             elif event.button == 8:
                 print("SELECT")
